@@ -1,0 +1,146 @@
+body {
+    background-color: rgb(240, 240, 240);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.sectionComponent {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5%;
+    box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08);
+}
+
+.sectionComponent > form {
+    display: flex;
+    flex-direction: column;
+}
+
+#resumeDisplay {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    grid-area: resumeDisplay;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08);
+}
+
+#workSection {
+    grid-area: workSection;
+}
+
+#personalSection {
+    grid-area: personalSection;
+}
+
+#personalSection form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#personalSection h2 {
+    margin: 0;
+}
+
+#educationSection {
+    grid-area: educationSection;
+}
+
+#personalDisplayContainer {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+    font-size: smaller;
+    flex-wrap: nowrap;
+}
+
+#nameTitle {
+    font-weight: bold;
+}
+
+#resumeHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+#inputWrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.4fr;
+    grid-template-areas: "personalSection resumeDisplay resumeDisplay"
+                        "educationSection resumeDisplay resumeDisplay"
+                        "workSection resumeDisplay resumeDisplay" ;
+    gap: 5vw;
+    margin: 3%;
+}
+
+.cvSectionHeader {
+    border-bottom: solid 1px black;
+    width: 88%;
+}
+
+.resumeEntry {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2%;
+    gap: 1vh;
+}
+
+.institutionEntry {
+    font-weight: bold;
+}
+
+.entryHeadline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.attendedEntry {
+    font-style: italic;
+}
+
+.responsibilitiesEntry {
+    white-space: pre-line;
+}
+
+.positionEntry {
+    font-style: italic;
+}
+
+.delete-button {
+    opacity: 0;
+}
+
+.delete-button:hover {
+    opacity: 100;
+}
+
+form input,
+form textarea,
+form label {
+    margin: 1%;
+}
+
+form input,
+form textarea {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    border-style: none;
+    height: 2em;
+    width: 90%
+}
+
+form label {
+    font-weight: bold;
+}
+
