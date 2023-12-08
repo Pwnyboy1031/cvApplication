@@ -42,7 +42,7 @@ function EducationSection({setEducationData, educationData}) {
                 <input type='date' id='schoolEndInput' value={newEducation.endDate} onChange={(e) => setNewEducation({...newEducation, endDate: e.target.value})}></input>
                 <label htmlFor='gpaInput'>GPA</label>
                 <input type='number' id='gpaInput' value={newEducation.gpa} onChange={(e) => setNewEducation({...newEducation, gpa: e.target.value})}></input>
-                <button type='submit'>Add</button>
+                <button type='submit' className='submitButton'>Add</button>
             </form>
         </div>
     )

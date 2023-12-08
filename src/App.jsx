@@ -102,7 +102,7 @@ const removeWork = (index) => {
       <EducationSection setEducationData={setEducationData} educationData={educationData}></EducationSection>
       <WorkSection setWorkData={setWorkData} workData={workData}></WorkSection>
       <CvDisplay personalInfo={personalInfo} educationData={educationData} workData={workData} removeEducation={removeEducation} removeWork={removeWork}/>
-      <button onClick={handlePdfConversion}>Convert to PDF</button>
+      <button onClick={handlePdfConversion} id='pdfButton'>Convert to PDF</button>
     </div>
   )
 }

@@ -37,10 +37,9 @@ function WorkSection({setWorkData, workData}) {
                 <input type='date' id='jobStartInput' value={newWork.startDate} onChange={(e) => setNewWork({...newWork, startDate: e.target.value})}></input>
                 <label htmlFor='jobEndInput'>End Date</label>
                 <input type='date' id='jobEndInput' value={newWork.endDate} onChange={(e) => setNewWork({...newWork, endDate: e.target.value})}></input>
-                <h3>Responsibilities</h3>
                 <label htmlFor='responsibilities'>Responsibilities</label>
                 <textarea type='text' id='responsibilities' value={newWork.responsibilities} onChange={(e) => setNewWork({...newWork, responsibilities: e.target.value})}></textarea>
-                <button type='submit'>Add</button>
+                <button type='submit' className='submitButton'>Add</button>
             </form>
         </div>
     );
