@@ -7,7 +7,7 @@ body {
 .sectionComponent {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    padding: 5%;
+    padding: 2vh;
     box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08);
 }
 
@@ -109,7 +109,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 2%;
+    margin-top: 3%;
     gap: 1vh;
 }
 
@@ -158,9 +158,17 @@ form label {
 form textarea {
     height: 10vh;
     resize: none;
+    padding: 1vw;
 }
 
 .submitButton {
     margin: 2vh;
     width: 90%;
+}
+
+.delete-button {
+    background-color: rgb(222, 0, 0);
+    border-color: rgb(174, 0, 0);
+    color: white;
+    border-radius: 5px;
 }
