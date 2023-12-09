@@ -136,14 +136,6 @@ body {
     font-style: italic;
 }
 
-.delete-button {
-    opacity: 0;
-}
-
-.delete-button:hover {
-    opacity: 100;
-}
-
 form input,
 form textarea,
 form label {

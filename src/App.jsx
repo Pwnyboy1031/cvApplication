@@ -7,31 +7,15 @@ import { useState } from 'react'
 import  html2pdf  from 'html2pdf.js'
 
 
-//testing
-
-
 function App() {
 
-  
   function handlePdfConversion() {
     let resumeBox = document.getElementById('resumeDisplay');
-
-    // Find and store all delete buttons in the resume display
-    const deleteButtons = resumeBox.querySelectorAll('delete-button');
-
-    // Temporarily remove delete buttons from the resume display
-    deleteButtons.forEach((button) => {
-      button.style.display = 'none';
-    });
-
     // Generate the PDF
     html2pdf(resumeBox)
-
-    // Restore delete buttons after generating the PDF
-    deleteButtons.forEach((button) => {
-      button.style.display = 'block';
-    });
   }
+
+  const [hovered, setHovered] = useState()
 
   const [personalInfo, setPersonalInfo] = useState({
     firstName: 'John',
@@ -97,12 +81,13 @@ const removeWork = (index) => {
 
 
 
+
   return (
     <div id='inputWrapper'>
       <PersonalSection setPersonalInfo={setPersonalInfo} {...personalInfo}></PersonalSection>
       <EducationSection setEducationData={setEducationData} educationData={educationData}></EducationSection>
       <WorkSection setWorkData={setWorkData} workData={workData}></WorkSection>
-      <CvDisplay personalInfo={personalInfo} educationData={educationData} workData={workData} removeEducation={removeEducation} removeWork={removeWork}/>
+      <CvDisplay personalInfo={personalInfo} educationData={educationData} workData={workData} removeEducation={removeEducation} removeWork={removeWork} hovered={hovered} setHovered={setHovered}/>
       <button onClick={handlePdfConversion} id='pdfButton'>Convert to PDF</button>
     </div>
   )
