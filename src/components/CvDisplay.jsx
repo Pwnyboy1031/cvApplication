@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import EducationDisplay from "./educationDisplay";
+import EducationDisplay from "./EducationDisplay";
 import CvHeader from "./headerDisplay";
 import WorkDisplay from "./WorkDisplay";
 

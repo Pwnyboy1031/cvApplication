@@ -1,6 +1,6 @@
 //import { useState } from 'react'
 import PersonalSection from './components/personalSection'
-import CvDisplay from './components/cvdisplay.jsx'
+import CvDisplay from './components/CvDisplay.'
 import EducationSection from './components/EducationSection'
 import WorkSection from './components/workSection'
 import { useState } from 'react'
