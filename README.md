@@ -1,0 +1,1 @@
+Create and customize your professional resume with ease using this web app. Build a comprehensive resume by entering your personal information, education details, and work experience. The app offers a user-friendly interface with dynamic features, including real-time preview and PDF conversion. 
